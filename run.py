@@ -1,3 +1,4 @@
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -34,11 +35,11 @@ def read_csv_range(filename, start, end):
         rows = [row[0] for i, row in enumerate(csv.reader(f)) if start <= i < end]
     return rows
 
-# Rentang data yang diproses (misal dari baris 1 sampai 50)
-start_row =0  # Baris pertama (0-based index)
-end_row = 50  # Baris terakhir yang ingin diproses
+start_row = 1000
+end_row = 1050
 
-# Deklarasi akun tunggal
+email = "mikaela_holcomb@yahoo.com"
+
 
 
 # Baca judul video sesuai rentang yang diinginkan
